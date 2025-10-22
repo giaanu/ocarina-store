@@ -1,17 +1,13 @@
-import './ProductCard.css'
-
-const ProductCard = ({product}) => {
-    return (
-        <div className="product-card-container">
-            <div className="prod-card-img-container">
-                <img src={product.imageUrl} alt="" />
-            </div>
-
-            <div className="prod-card-description-container">
-                <h2>{product.description}</h2>
-                <span>u$s {product.price.toFixed(2)}</span>
-            </div>
-        </div>
-    )
+function ProductCard({ product, addToCart }) {
+  return (
+    <div className="product-card">
+      <img src={product.image} alt={product.title} />
+      <h2>{product.title}</h2>
+      <p className="description">{product.description}</p>
+      <p className="price">${product.price}</p>
+      <button onClick={() => addToCart(product)}>Agregar al carrito</button>
+    </div>
+  );
 }
+
 export default ProductCard;
