@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getProductById } from "../../Services/ProductService";
+import { getProductById } from "../../services/ProductService.js";
 import ProductDetail from "../../components/ProductDetail/ProductDetail";
 import "./ProductDetailContainer.css";
 

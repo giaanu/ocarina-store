@@ -1,4 +1,4 @@
-import AppProvider from './providers/AppProvider.jsx';
+import AppProvider from "./providers/AppProvider.jsx";
 
 
 function App() {
